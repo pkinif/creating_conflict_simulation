@@ -12,6 +12,6 @@ mtcars <- mtcars %>%
 # Summarize the dataset
 summary_table <- mtcars %>%
   group_by(cyl_factor) %>%
-  summarise(mean_mpg = mean(mpg, na.rm = TRUE))
+  summarise(median_mpg = median(mpg, na.rm = TRUE))
 
 print(summary_table)
